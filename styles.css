@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ***
+Remove Arrows/Spinners from Input type="Number"
+*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  height: 729px;
+  text-align: center;
+  background-color: #1f2937;
+}
+
+/******
+
+HEADER SECTION STYLES
+
+*/
+header {
+  width: 100%;
+  height: 285px;
+  background-color: #6943ff;
+  padding: 34px 50px;
+}
+h1 {
+  font-size: 28px;
+  letter-spacing: -0.03em;
+  font-weight: 900;
+  line-height: 48px;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+header input {
+  width: 117px;
+  caret-color: transparent;
+  height: 84px;
+  text-decoration: none;
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #6943ff;
+  margin-bottom: 25px;
+}
+header button {
+  display: block;
+  margin: auto;
+  padding: 9px 27px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/******
+
+MAIN SECTION STYLES
+
+*/
+.sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 108.57px;
+  margin: 30px 25px;
+  background: #273549;
+  border-radius: 4.68077px 0px 0px 0px;
+}
+.sec h2 {
+  font-size: 20px;
+  margin: 9px;
+  color: #ccc1ff;
+}
+.sec p {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+#sec-01,
+#sec-02 {
+  margin-bottom: 23px;
+}
+#sec-03 {
+  margin-bottom: 35px;
+}
+/* ******
+
+FOOTER  STYLES
+
+*/
+
+footer {
+  padding: 40px 20px;
+  text-align: center;
+}
+footer p a {
+  color: #ff4c29;
+  text-decoration: none;
+}
+
+/******
+
+RESPONSIVE BREAKPOINTS
+
+*/
+
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
